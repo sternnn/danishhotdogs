@@ -2,11 +2,12 @@
     --napkin-red: #c8102e;
     --napkin-red-dark: #8b0a1f;
     --napkin-white: #fff;
+    --napkin-pink: #fbe7ea;
     --check-tint: rgb(200 16 46 / 0.5);
     --check-size: 40px;
 }
 
-body, h1, h2, ul, li, a {
+body, h1, h2, p, ul, li, a {
     font-family: Verdana, sans-serif;
 }
 
@@ -57,6 +58,40 @@ a {
 a:hover,
 a:focus {
     color: var(--napkin-red);
+}
+
+.back-link {
+    display: inline-block;
+    margin-bottom: 16px;
+    font-size: 0.9em;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+.back-link:hover,
+.back-link:focus {
+    text-decoration: underline;
+}
+
+/* Section links on the home page */
+.page-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.page-list a {
+    display: block;
+    padding: 12px 16px;
+    background: var(--napkin-pink);
+    border-left: 6px solid var(--napkin-red);
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.page-list a:hover,
+.page-list a:focus {
+    background: var(--napkin-red);
+    color: var(--napkin-white);
 }
 
 @media (max-width: 480px) {
